@@ -24,11 +24,29 @@ class Header extends Component {
               <Nav.Link>Contact Us</Nav.Link>
             </Nav.Item>
           </Nav>
-          <Form inline>
-            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-            <Button variant="outline-success">Search</Button>
-          </Form>
           </Navbar.Collapse>
+        </Navbar>
+      </div>
+    );
+  }
+}
+
+class Content extends Component{
+  render(){
+    return(
+      <div>
+        <h1>Body Content</h1>
+      </div>
+    );
+  }
+}
+
+class Footer extends Component {
+  render(){
+    return(
+      <div>
+        <Navbar bg="dark" fixed="bottom">
+          
         </Navbar>
       </div>
     );
@@ -39,6 +57,8 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <Content />
+      <Footer />
     </div>
   );
 }
