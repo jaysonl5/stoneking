@@ -9,7 +9,12 @@ class Header extends Component {
       <div>
         <Navbar bg='light'>
           <Navbar.Brand>
-            Stoneking Team
+          <img
+            src="../images/stoneking_nav_logo.png"
+            width="300em"
+            className="align-top"
+            alt="React Bootstrap logo"
+          />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
