@@ -3,10 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
 import './App.scss';
-import FormControl from 'react-bootstrap/FormControl';
 
 class Header extends Component {
   render(){
