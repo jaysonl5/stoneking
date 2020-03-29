@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMobile } from '@fortawesome/free-solid-svg-icons'
 import './App.scss';
 
 class Header extends Component {
@@ -16,17 +18,19 @@ class Header extends Component {
             alt="React Bootstrap logo"
           />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
+
+          <Nav className="justify-content-center">
             <Nav.Item>
-              <Nav.Link>Home</Nav.Link>
+              <Nav.Link href="/home">Home</Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link>Contact Us</Nav.Link>
             </Nav.Item>
+            <Nav.Item>
+              <Nav.Link>  <FontAwesomeIcon icon={faMobile} size="lg"></FontAwesomeIcon>  Call Us: 999-999-9999</Nav.Link>
+            </Nav.Item>
           </Nav>
-          </Navbar.Collapse>
+
         </Navbar>
       </div>
     );
@@ -38,6 +42,8 @@ class Content extends Component{
     return(
       <div>
         <h1>Body Content</h1>
+           
+        
       </div>
     );
   }
@@ -48,7 +54,14 @@ class Footer extends Component {
     return(
       <div>
         <Navbar bg="dark" fixed="bottom">
-          
+
+          <img
+            src="../images/metrofirst_white.png"
+            width="85em"
+            className="align-top"
+            alt="React Bootstrap logo"
+          />
+
         </Navbar>
       </div>
     );
