@@ -4,10 +4,10 @@ $theme-colors: (
 
 .contactForm{
     border-radius: 50% #000;
-    border: 2px;
+    border: 0px solid;
     margin: 20px;
     padding: 20px;
-    box-shadow: 2px 2px 2px 2px lightgrey;
+    box-shadow: 2px 2px 5px lightgrey;
 }
 
 @import "~bootstrap/scss/bootstrap";
