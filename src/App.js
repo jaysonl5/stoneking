@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMobile } from '@fortawesome/free-solid-svg-icons'
 import './App.scss';
+import ContactForm from './ContactForm.js';
 
 class Header extends Component {
   render(){
@@ -41,7 +42,7 @@ class Content extends Component{
   render(){
     return(
       <div>
-        <h1>Body Content</h1>
+        <ContactForm />
            
         
       </div>
