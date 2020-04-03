@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMobile } from '@fortawesome/free-solid-svg-icons'
 
-export default class Navigation extends Component {
-    render(){
+export default function Navigation (props){
       return(
         <div>
           <Navbar bg='light'>
@@ -34,4 +33,3 @@ export default class Navigation extends Component {
         </div>
       );
     }
-  }

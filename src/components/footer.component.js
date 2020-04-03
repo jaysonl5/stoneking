@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 
-export default class Footer extends Component {
-    render(){
-      return(
+export default function Footer (props) {
+    return(
         <div>
           <Navbar bg="dark" fixed="bottom">
   
@@ -18,6 +17,5 @@ export default class Footer extends Component {
         </div>
       );
     }
-  }
 
  
