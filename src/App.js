@@ -1,82 +1,24 @@
-import React, { Component } from 'react';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMobile } from '@fortawesome/free-solid-svg-icons'
+import React from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.scss';
-import ContactForm from './ContactForm.js';
 
-class Header extends Component {
-  render(){
-    return(
-      <div>
-        <Navbar bg='light'>
-          <Navbar.Brand>
-          <img
-            src="../images/stoneking_nav_logo.png"
-            width="300em"
-            className="align-top"
-            alt="React Bootstrap logo"
-          />
-          </Navbar.Brand>
+import Navigation from "./components/navigation.component";
+import ContactForm from './components/contact-form.component.js';
+import PropertiesList from "./components/properties-list.component"; 
+import Footer from "./components/footer.component";
 
-          <Nav className="justify-content-center">
-            <Nav.Item>
-              <Nav.Link href="/home">Home</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link>Contact Us</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link>  <FontAwesomeIcon icon={faMobile} size="lg"></FontAwesomeIcon>  Call Us: 999-999-9999</Nav.Link>
-            </Nav.Item>
-          </Nav>
-
-        </Navbar>
-      </div>
-    );
-  }
-}
-
-class Content extends Component{
-  render(){
-    return(
-      <div>
-        <ContactForm />
-           
-        
-      </div>
-    );
-  }
-}
-
-class Footer extends Component {
-  render(){
-    return(
-      <div>
-        <Navbar bg="dark" fixed="bottom">
-
-          <img
-            src="../images/metrofirst_white.png"
-            width="85em"
-            className="align-top"
-            alt="React Bootstrap logo"
-          />
-
-        </Navbar>
-      </div>
-    );
-  }
-}
-
-function App() {
+export default function App() {
   return (
+
+    <Router>
+
     <div className="App">
-      <Header />
-      <Content />
+      <Navigation />
+      <ContactForm />
+      <Route path="/" exact component={PropertiesList} />
       <Footer />
     </div>
+
+    </Router>
   );
 }
-
-export default App;
