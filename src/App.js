@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.scss';
-
 import Navigation from "./components/navigation.component";
 import ContactForm from './components/contact-form.component.js';
+import AboutCards from "./components/about-cards.component.js";
 import PropertiesList from "./components/properties-list.component"; 
 import Footer from "./components/footer.component";
 
@@ -15,6 +15,7 @@ export default function App() {
     <div className="App">
       <Navigation />
       <ContactForm />
+      <AboutCards />
       <Route path="/" exact component={PropertiesList} />
       <Footer />
     </div>
