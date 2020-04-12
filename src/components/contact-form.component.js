@@ -125,16 +125,29 @@ class ContactForm extends Component{
             zip: this.state.zip,
             buyDescription: this.state.buyDescription
         }
+        
 
         console.log(contact);
 
 
         axios.all([
             axios.post('http://localhost:5000/contacts/add', contact),
-            axios.post('http://localhost:5000/properties/add', property)
+            axios.post('http://localhost:5000/properties/add', property),
+            axios.post('http://localhost:5000/send/send', {
+                firstName: contact.firstName, 
+                lastName: contact.lastName,
+                email: contact.email, 
+                buySell: property.buySell,
+                propertyType: property.propertyType,
+                address: property.address,
+                city: property.city,
+                state: property.state,
+                zip: property.zip,
+                buyDescription: property.buyDescription
+            })
           ])
-          .then(axios.spread((contactRes, propertyRes) => {
-              console.log(contactRes.data + propertyRes.data);
+          .then(axios.spread((contactRes, propertyRes, sendRes) => {
+              console.log(contactRes.data + propertyRes.data + sendRes.data);
             }));
 
         this.setState({
