@@ -19,9 +19,11 @@ connection.once('open', () => {
 
 const contactsRouter = require('./routes/contacts');
 const propertiesRouter = require('./routes/properties');
+const sendRouter = require('./routes/send');
 
 app.use('/contacts', contactsRouter);
 app.use('/properties', propertiesRouter);
+app.use('/send', sendRouter);
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);

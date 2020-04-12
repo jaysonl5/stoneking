@@ -1,13 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Halant:wght@400;600;700&display=swap');
+
 $theme-colors: (
     "info": tomato
 );
 
 .contactForm{
-    border-radius: 50% #000;
+    background-color: #EEEEEE;
+    border-radius: 10px;
     border: 0px solid;
-    margin: 20px;
+    margin: 50px;
     padding: 20px;
-    box-shadow: 2px 2px 5px lightgrey;
+    //box-shadow: 2px 2px 5px lightgrey;
+}
+
+.contactTitle{
+    background-color: black;
+    margin-left: -1em;
+    margin-right: 7em;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Halant', serif;
+    font-style: italic;
+    font-weight: 700;
+    text-align: left;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.contactLabel{
+    font-size: 22px;
+    font-style: italic;
+    font-family: 'Halant', serif;
+    font-weight: 600;
+    text-align: left;
+}
+
+.submitBtn{
+    font-size: 22px;
+    font-style: italic;
+    font-family: 'Halant', serif;
+    font-weight: 700;
+}
+
+Form{
+    text-align: none;
 }
 
 .cardContainer{

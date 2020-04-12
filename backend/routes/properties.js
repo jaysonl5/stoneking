@@ -9,19 +9,23 @@ router.route('/').get((req, res) => {
 
 router.route('/add').post((req, res) => {
     const email = req.body.email;
+    const buySell = req.body.buySell;
     const propertyType = req.body.propertyType;
     const address = req.body.address;
     const city = req.body.city;
     const state = req.body.state;
     const zip = Number(req.body.zip);
+    const buyDescription = req.body.buyDescription;
 
     const newProperty = new Property({
         email,
+        buySell,
         propertyType,
         address, 
         city, 
         state, 
         zip,
+        buyDescription,
     });
 
     newProperty.save()
@@ -46,11 +50,13 @@ router.route('/update/:id').post((req, res) => {
     Property.findById(req.params.id)
         .then(property => {
             property.email = req.body.email;
+            property.buySell = req.body.buySell;
             property.propertyType = req.body.propertyType;
             property.address = req.body.address;
             property.city = req.body.city;
             property.state = req.body.state;
             property.zip = Number(req.body.zip);
+            property.buyDescription = req.body.buyDescription;
 
             property.save()
                 .then(() => res.json('Property updated!'))
