@@ -131,9 +131,9 @@ class ContactForm extends Component{
 
 
         axios.all([
-            axios.post('http://localhost:5000/contacts/add', contact),
-            axios.post('http://localhost:5000/properties/add', property),
-            axios.post('http://localhost:5000/send/send', {
+            axios.post('/contacts/add', contact),
+            axios.post('/properties/add', property),
+            axios.post('/send/send', {
                 firstName: contact.firstName, 
                 lastName: contact.lastName,
                 email: contact.email, 
