@@ -49,6 +49,31 @@ Form{
     text-align: none;
 }
 
+.mainHeader{
+    margin-top: 30px;
+    padding: 20px;
+    background-image: url("./images/house.png");
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.mainH1{
+    background-color: black;
+    padding: 8px;
+    width: 340px;
+    margin-top: 5em;
+    margin-right: 2em;
+    padding-left: 1em;
+    color: white;
+    font-size: 1.8em;
+    font-family: 'Halant', serif;
+    font-style: italic;
+    font-weight: 600;
+    text-align: left;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
 @import "~bootstrap/scss/bootstrap";
 
 

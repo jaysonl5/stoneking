@@ -168,7 +168,6 @@ class ContactForm extends Component{
 
     render(){
         return(
-            <Row>
                 <Col xs="12" sm="12" md="7" lg="5" xl="4">
                     <div>
                         <Form className="contactForm" onSubmit={this.onSubmit}> 
@@ -249,7 +248,6 @@ class ContactForm extends Component{
                             </Form>
                     </div>
                 </Col>
-            </Row>
         );
     }
 }
