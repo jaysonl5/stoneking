@@ -3,7 +3,6 @@ import axios from 'axios';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
@@ -168,7 +167,7 @@ class ContactForm extends Component{
 
     render(){
         return(
-                <Col xs="12" sm="12" md="7" lg="5" xl="4">
+                <Col xs="12" sm="12" md="7" lg="5" xl="3">
                     <div>
                         <Form className="contactForm" onSubmit={this.onSubmit}> 
                             <div className="contactTitle">Contact Us</div>
