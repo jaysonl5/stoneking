@@ -9,7 +9,7 @@ $theme-colors: (
     background-color: #EEEEEE;
     border-radius: 10px;
     border: 0px solid;
-    margin: 50px;
+    margin: 50px 80px 0 -50px;
     padding: 20px;
     //box-shadow: 2px 2px 5px lightgrey;
 }
@@ -17,11 +17,11 @@ $theme-colors: (
 .contactTitle{
     background-color: black;
     margin-left: -1em;
-    margin-right: 7em;
-    margin-bottom: 30px;
-    padding-left: 15px;
+    margin-bottom: 20px;
+    margin-right: 2em;
+    padding-left: 1em;
     color: white;
-    font-size: 30px;
+    font-size: 2em;
     font-family: 'Halant', serif;
     font-style: italic;
     font-weight: 700;
@@ -32,7 +32,7 @@ $theme-colors: (
 
 .contactLabel{
     font-size: 22px;
-    font-style: italic;
+
     font-family: 'Halant', serif;
     font-weight: 600;
     text-align: left;
@@ -49,23 +49,51 @@ Form{
     text-align: none;
 }
 
-.cardContainer{
-   color: blue($color: #000000);
-}
-
-.allCards{
-    color: blue($color: #000000);
-}
-
-.indiCard{
-    border-radius: 50% #000;
-    border: 0px solid;
-    margin: 20px;
+.mainHeader{
+    margin: 30px 0 0 30px;
     padding: 20px;
-    box-shadow: 2px 2px 5px lightgrey;
-    font-size: 1.0rem;
-    
+    background-image: url("./images/house.png");
+    background-repeat: no-repeat;
+    width: 100%;
 }
+
+.mainH1{
+    background-color: black;
+    padding: 8px;
+    width: 340px;
+    margin-top: 5em;
+    margin-right: 2em;
+    padding-left: 1em;
+    color: white;
+    font-size: 1.8em;
+    font-family: 'Halant', serif;
+    font-style: italic;
+    font-weight: 600;
+    text-align: left;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.mainBody{
+    margin-left: 2em;
+    font-family: 'Halant', serif;
+    font-weight: 600;
+    font-size: 1em;
+    text-align: center;
+}
+
+.separator{
+
+    text-align: center;
+    height: 5px;
+    width: 50%;
+}
+
+.spacer{
+    margin: 5em 0;
+}
+
+@import "~bootstrap/scss/bootstrap";
 
 
 @import "~bootstrap/scss/bootstrap";

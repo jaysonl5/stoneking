@@ -3,7 +3,6 @@ import axios from 'axios';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
@@ -131,9 +130,9 @@ class ContactForm extends Component{
 
 
         axios.all([
-            axios.post('http://localhost:5000/contacts/add', contact),
-            axios.post('http://localhost:5000/properties/add', property),
-            axios.post('http://localhost:5000/send/send', {
+            axios.post('/contacts/add', contact),
+            axios.post('/properties/add', property),
+            axios.post('/send/send', {
                 firstName: contact.firstName, 
                 lastName: contact.lastName,
                 email: contact.email, 
@@ -168,8 +167,7 @@ class ContactForm extends Component{
 
     render(){
         return(
-            <Row>
-                <Col xs md="10" lg="6" xl="4">
+                <Col xs="12" sm="12" md="7" lg="5" xl="3">
                     <div>
                         <Form className="contactForm" onSubmit={this.onSubmit}> 
                             <div className="contactTitle">Contact Us</div>
@@ -249,7 +247,6 @@ class ContactForm extends Component{
                             </Form>
                     </div>
                 </Col>
-            </Row>
         );
     }
 }

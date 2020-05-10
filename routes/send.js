@@ -4,14 +4,6 @@ require('dotenv').config();
 
 router.route('/send').post((req, res) => {
 
-    var transport = {
-        host: 'smtp.gmail.com',
-        auth: {
-            user: process.env.EMAIL_USER,
-            pass: process.env.EMAIL_PASSWORD
-        }
-    }
-
     var firstName = req.body.firstName
     var lastName = req.body.lastName
     var fullName = firstName + ` ` + lastName;
@@ -40,6 +32,14 @@ router.route('/send').post((req, res) => {
         to: 'jayson.lewis5@gmail.com',
         subject: 'Stoneking Contact Request!',
         text: content
+    }
+
+    var transport = {
+        host: 'smtp.gmail.com',
+        auth: {
+            user: process.env.EMAIL_USER,
+            pass: process.env.EMAIL_PASSWORD
+        }
     }
 
     var transporter = nodemailer.createTransport(transport);

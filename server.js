@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
+const path = require('path');
 
 require('dotenv').config();
 
@@ -24,6 +25,11 @@ const sendRouter = require('./routes/send');
 app.use('/contacts', contactsRouter);
 app.use('/properties', propertiesRouter);
 app.use('/send', sendRouter);
+app.use(express.static(path.join(__dirname, "client", "build")))
+
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
