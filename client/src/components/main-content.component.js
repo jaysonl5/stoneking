@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Col from 'react-bootstrap/Col';
+import AboutCards from './about-cards.component';
 
 export default function MainContent(props){
     return(
@@ -15,6 +16,7 @@ export default function MainContent(props){
                 estate team that is dedicated to providing outstanding service to all our 
                 Clients! Contact us today to find the home of your dreams.</p>
                 <hr className="separator"></hr>
+                <AboutCards />
             </Col>
 
             
