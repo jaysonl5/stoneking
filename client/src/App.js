@@ -9,6 +9,7 @@ import ContactForm from './components/contact-form.component.js';
 
 import Footer from "./components/footer.component";
 import MainContent from './components/main-content.component';
+import AboutCards from './components/about-cards.component';
 
 export default function App() {
   return (
@@ -20,7 +21,7 @@ export default function App() {
       <Row>
         <MainContent />
         <ContactForm />
-       
+        <AboutCards />
       </Row>
       <div className="spacer"></div>
       <Footer />
