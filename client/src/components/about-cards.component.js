@@ -7,13 +7,15 @@ export default class AboutCards extends Component {
         return(
             <div className="cardContainer">
                 <CardGroup className="allCards" >
-                    <div  className="col-md-3">
+                    <div  className="col-md-4">
                     <Card className="indiCard">
                         <Card.Img variant="top" src="../images/Sherri.jpg" />
                         <Card.Body>
+                            <div class="about-card-title">
                         <Card.Title>Sherri Stoneking</Card.Title>
+                            </div>
                         <Card.Text>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed vulputate odio ut enim. Sed blandit libero volutpat sed cras ornare. Proin nibh nisl condimentum id venenatis a condimentum. Sed velit dignissim sodales ut eu sem integer. Nibh mauris cursus mattis molestie a iaculis at erat. Lorem ipsum dolor sit amet consectetur adipiscing. Sollicitudin ac orci phasellus egestas tellus. Urna condimentum mattis pellentesque id nibh tortor id aliquet. Proin libero nunc consequat interdum varius sit amet.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                         </Card.Text>
                         </Card.Body>
                         <Card.Footer>
@@ -21,13 +23,15 @@ export default class AboutCards extends Component {
                         </Card.Footer>
                     </Card>
                     </div>
-                    <div  className="col-md-3">
+                    <div  className="col-md-4">
                     <Card className="indiCard">
                         <Card.Img variant="top" src="../images/Kevin.jpg" />
                         <Card.Body>
+                            <div class="about-card-title">
                         <Card.Title>Kevin Stoneking</Card.Title>
+                            </div>
                         <Card.Text>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed vulputate odio ut enim. Sed blandit libero volutpat sed cras ornare. Proin nibh nisl condimentum id venenatis a condimentum. Sed velit dignissim sodales ut eu sem integer. Nibh mauris cursus mattis molestie a iaculis at erat. Lorem ipsum dolor sit amet consectetur adipiscing. Sollicitudin ac orci phasellus egestas tellus. Urna condimentum mattis pellentesque id nibh tortor id aliquet. Proin libero nunc consequat interdum varius sit amet.{' '}
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </Card.Text>
                         </Card.Body>
                         <Card.Footer>
@@ -35,13 +39,15 @@ export default class AboutCards extends Component {
                         </Card.Footer>
                     </Card>
                     </div>
-                    <div  className="col-md-3">
+                    <div  className="col-md-4">
                     <Card className="indiCard">
                         <Card.Img variant="top" src="../images/sabrina.png" />
                         <Card.Body>
+                            <div class="about-card-title">
                         <Card.Title>Sabrina Kettle</Card.Title>
+                            </div>
                         <Card.Text>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed vulputate odio ut enim. Sed blandit libero volutpat sed cras ornare. Proin nibh nisl condimentum id venenatis a condimentum. Sed velit dignissim sodales ut eu sem integer. Nibh mauris cursus mattis molestie a iaculis at erat. Lorem ipsum dolor sit amet consectetur adipiscing. Sollicitudin ac orci phasellus egestas tellus. Urna condimentum mattis pellentesque id nibh tortor id aliquet. Proin libero nunc consequat interdum varius sit amet.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </Card.Text>
                         </Card.Body>
                         <Card.Footer>

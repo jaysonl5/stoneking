@@ -93,6 +93,23 @@ Form{
     margin: 5em 0;
 }
 
+.about-card-title {
+    background-color: black;
+    display: flex;
+    color: white;
+    font-family: 'Halant', serif;
+    font-style: italic;
+    font-weight: 600;
+    text-align: left;
+    padding: 5px;
+    width: 150px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+}
+
 @import "~bootstrap/scss/bootstrap";
 
 
