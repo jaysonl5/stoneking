@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelopeOpenText } from '@fortawesome/free-solid-svg-icons';
 
 
 class ContactForm extends Component{
@@ -167,24 +168,25 @@ class ContactForm extends Component{
 
     render(){
         return(
-                <Col xs="12" sm="12" md="7" lg="5" xl="3">
+                // <Col xs="12" sm="12" md="7" lg="5" xl="3">
                     <div>
+                         
                         <Form className="contactForm" onSubmit={this.onSubmit}> 
-                            <div className="contactTitle">Contact Us</div>
+                            <div className="contactTitle"><FontAwesomeIcon icon={faEnvelopeOpenText} size="lg"></FontAwesomeIcon>  Contact Us</div>
                             <Form.Row>
                                 <Form.Group as={Col} controlId="formGridEmail">
-                                <Form.Label className="contactLabel">Email</Form.Label>
-                                <Form.Control type="email" placeholder="Enter email" value={this.state.email} onChange={this.onChangeEmail} />
+                                <label for="emailInput" className="contactLabel">Email</label>
+                                <input className="form__input" id="emailInput" type="email" placeholder="Enter email" value={this.state.email} onChange={this.onChangeEmail} />
                                 </Form.Group>
                             </Form.Row>
                             <Form.Row>
                                 <Form.Group as={Col} controlId="formGridFirst">
                                 <Form.Label className="contactLabel">First Name</Form.Label> 
-                                <Form.Control type="text" placeholder="Enter first name" value={this.state.firstName} onChange={this.onChangeFirstname} />
+                                <Form.Control  className="form__input" type="text" placeholder="Enter first name" value={this.state.firstName} onChange={this.onChangeFirstname} />
                                 </Form.Group>
                                 <Form.Group as={Col} controlId="formGridLast">
                                 <Form.Label className="contactLabel">Last Name</Form.Label>
-                                <Form.Control type="text" placeholder="Enter last name" value={this.state.lastName} onChange={this.onChangeLastname} />
+                                <Form.Control  className="form__input" type="text" placeholder="Enter last name" value={this.state.lastName} onChange={this.onChangeLastname} />
                                 </Form.Group>
                             </Form.Row>
                             <Form.Row>
@@ -203,7 +205,7 @@ class ContactForm extends Component{
                                     <Form.Row>
                                         <Form.Group as={Col} controlId="formGridBuyText">
                                             <Form.Label className="contactLabel">Describe your dream home:</Form.Label>
-                                            <Form.Control as="textarea" rows="3" value={this.state.buyDescription} onChange={this.onChangeBuyDescription} />
+                                            <Form.Control as="textarea" className="formText" rows="3" value={this.state.buyDescription} onChange={this.onChangeBuyDescription} />
                                         </Form.Group>
                                     </Form.Row>
                                 ) 
@@ -243,10 +245,10 @@ class ContactForm extends Component{
                                     </div>
                                 )
                         }
-                                {this.state.submit === 'submit' ? <Button className="submitBtn"variant="dark" type="submit">  <FontAwesomeIcon icon={faPaperPlane} size="lg"></FontAwesomeIcon> Submit</Button> : <p>Sucessfully Submitted!</p>}
+                                {this.state.submit === 'submit' ? <Button className="submitBtn" variant="dark" type="submit">  <FontAwesomeIcon icon={faPaperPlane} size="lg"></FontAwesomeIcon> Submit</Button> : <p>Sucessfully Submitted!</p>}
                             </Form>
                     </div>
-                </Col>
+                // </Col>
         );
     }
 }

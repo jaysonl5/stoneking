@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import './App.scss';
+import './sass/App.scss';
+import './css/style.css';
 import Row from 'react-bootstrap/Row';
 
 
@@ -14,14 +15,20 @@ export default function App() {
   return (
 
     <Router>
-
     <div className="App">
       <Navigation />
-      <Row>
-        <MainContent />
-        <ContactForm />
-       
-      </Row>
+
+      <div className="banner">
+        <h1>Find the perfect place to call<br /> <span className="homespan">HOME</span></h1>
+      </div>
+
+      <div className="container">
+        <div className="row">
+        <div className="col-2-of-4"><MainContent /></div>
+
+        <div className="col-2-of-4"><ContactForm /></div>
+        </div>
+      </div>
       <div className="spacer"></div>
       <Footer />
     </div>

@@ -11,13 +11,13 @@ export default function Navigation(props){
             <Navbar.Brand>
             <img
               src="../images/stoneking_nav_logo.png"
-              width="300em"
+              width="400rem"
               className="align-top"
               alt="React Bootstrap logo"
             />
             </Navbar.Brand>
   
-            <Nav className="justify-content-center">
+            {/* <Nav className="justify-content-center">
               <Nav.Item>
                 <Nav.Link href="/home">Home</Nav.Link>
               </Nav.Item>
@@ -27,9 +27,10 @@ export default function Navigation(props){
               <Nav.Item>
                 <Nav.Link>  <FontAwesomeIcon icon={faMobile} size="lg"></FontAwesomeIcon>  Call Us: 999-999-9999</Nav.Link>
               </Nav.Item>
-            </Nav>
+            </Nav> */}
   
           </Navbar>
+          <button className="callBtn">Call Now</button>
         </div>
       );
 }

@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Halant:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;600;700;900&display=swap');
+
+$theme-colors: (
+    "info": tomato
+);
+
+
+
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+
+
+    @include respond(tab-land){ //width < 900?
+        font-size: 56.25%;
+    }
+
+    @include respond(tab-port){ //width < 600?
+        font-size: 50%;
+    }
+
+    @include respond(big-desktop){
+        font-size: 75%;
+    }
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: #777;
+    padding: 3rem;
+}
+
+.container{
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: flex-start;
+
+}
+
+.mainWrapper{
+
+}
+
+.contactWrapper{
+
+}
+
+.contactForm{
+    background-image: linear-gradient(to bottom right, rgba(251, 172, 75, .95), rgba(217, 104, 1, .95));
+    border-radius: 1rem;
+    border: 0px solid;
+
+    padding: 2rem;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 1.5rem rgba(0, 0, 0, 0.032),
+        0 1.5rem 1.5rem rgba(0, 0, 0, 0.036),
+        0 1rem 1.5rem rgba(0, 0, 0, 0.08);
+    //box-shadow: 2px 2px 5px lightgrey;
+}
+
+.contactTitle{
+    // background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
+    margin-left: -1em;
+    margin-bottom: 2rem;
+    margin-right: 2em;
+    padding-left: 1em;
+    color: white;
+    font-size: 2.7em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-align: left;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.contactLabel{
+    font-size: 2.2rem;
+    color: white;
+    font-family: 'Lato', serif;
+    font-weight: 600;
+    text-align: left;
+}
+
+
+
+Form{
+    text-align: none;
+}
+
+.banner{
+    padding: 2rem;
+    background: linear-gradient(to bottom, rgba(48,152,122, .55), rgba(48,152,122, .55)),url("../images/modern_home.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30vh;
+    top: 30rem;
+    bottom: 30rem;
+    margin-bottom: 10rem;
+}
+
+.callBtn{
+    padding: 1rem 2rem;
+    background-color: white;
+    border: solid .5rem;
+    border-color: rgb(48, 152, 122);
+    position: relative;
+    float: right;
+    top: -8rem;
+}
+
+.callBtn:hover{
+    background-color:rgba(48,152,122, .8);
+}
+
+h1{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    letter-spacing: .5rem;
+    line-height: 6rem;
+    text-transform: uppercase;
+}
+
+h2{
+    color: #777;
+
+    // background-color: #333;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+    line-height: 6rem;
+    text-transform: uppercase;
+}
+
+.homespan{
+    letter-spacing: 3rem;
+    font-size: 6rem;
+}
+
+.imgFamily{
+    width: 100%;
+
+
+      
+        
+
+}
+
+
+
+.mainBody{
+    font-size: 2rem;
+    font-family: 'Halant', serif;
+    letter-spacing: .15rem;
+    color: $color-primary-dark;
+}
+
+.separator{
+    background-color:black;
+
+}
+
+.spacer{
+    margin: 5em 0;
+}
+
+// @import "~bootstrap/scss/bootstrap";
+
+
+ 
