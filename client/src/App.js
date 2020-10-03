@@ -22,13 +22,8 @@ export default function App() {
         <h1>Find the perfect place to call<br /> <span className="homespan">HOME</span></h1>
       </div>
 
-      <div className="container">
-        <div className="row">
-        <div className="col-2-of-4"><MainContent /></div>
-
-        <div className="col-2-of-4"><ContactForm /></div>
-        </div>
-      </div>
+      <div><MainContent /></div>
+      
       <div className="spacer"></div>
       <Footer />
     </div>

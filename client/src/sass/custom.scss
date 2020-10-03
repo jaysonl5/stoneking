@@ -7,8 +7,6 @@ $theme-colors: (
 );
 
 
-
-
 *,
 *::after,
 *::before{
@@ -50,14 +48,6 @@ body {
 
 }
 
-.mainWrapper{
-
-}
-
-.contactWrapper{
-
-}
-
 .contactForm{
     background-image: linear-gradient(to bottom right, rgba(251, 172, 75, .95), rgba(217, 104, 1, .95));
     border-radius: 1rem;
@@ -71,15 +61,9 @@ body {
         0 22.3px 1.5rem rgba(0, 0, 0, 0.032),
         0 1.5rem 1.5rem rgba(0, 0, 0, 0.036),
         0 1rem 1.5rem rgba(0, 0, 0, 0.08);
-    //box-shadow: 2px 2px 5px lightgrey;
 }
 
 .contactTitle{
-    // background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
-    margin-left: -1em;
-    margin-bottom: 2rem;
-    margin-right: 2em;
-    padding-left: 1em;
     color: white;
     font-size: 2.7em;
     font-family: 'Lato', sans-serif;
@@ -96,8 +80,6 @@ body {
     font-weight: 600;
     text-align: left;
 }
-
-
 
 Form{
     text-align: none;
@@ -140,38 +122,44 @@ h1{
 }
 
 h2{
-    color: #777;
-
-    // background-color: #333;
+    color: #F2884B;
     font-family: 'Lato', sans-serif;
     font-weight: 600;
-    font-size: 2.5rem;
-    letter-spacing: .2rem;
+    font-size: 5rem;
+    letter-spacing: -.2rem;
     line-height: 6rem;
     text-transform: uppercase;
 }
 
 .homespan{
     letter-spacing: 3rem;
-    font-size: 6rem;
+    font-size: 8rem;
 }
+
+
+.serveBanner{
+    margin-left: -30rem;
+    @include respond(tab-port){ 
+    margin-left: 0;
+    }
+}
+
 
 .imgFamily{
     width: 100%;
-
-
-      
-        
-
+    float: left;
+    margin: 1rem;
+    border-radius: 1rem;
 }
 
-
-
 .mainBody{
-    font-size: 2rem;
-    font-family: 'Halant', serif;
-    letter-spacing: .15rem;
+    font-size: 2.2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    line-height: 2.35rem;
+    letter-spacing: .2rem;
     color: $color-primary-dark;
+    text-align: left;
 }
 
 .separator{

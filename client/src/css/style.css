@@ -7,7 +7,7 @@
     background-color: rbga(#fff, 0.5);
     border: none;
     border-bottom: 3px solid transparent;
-    width: 90%;
+    width: 100%;
     display: block;
     transition: all .3s; }
     .form__input:focus {
@@ -21,22 +21,20 @@
 
 .formText{
   outline: 0;
-  width:90%;
+  width:100%;
   border-radius: 2px;
   border-bottom: 3px solid transparent;
   background-color: rbga(#fff, 0.5);
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
-
 
 .submitBtn{
   font-size: 2.2rem;
-  font-style: italic;
-  font-family: 'Halant', serif;
-  font-weight: 700;
-  width:30rem;
-  color: #ff7730;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  width:100%;
+  color: #55c57a;
   background-color: #fff;
   border-radius: 5px;
   outline: 0;
@@ -44,6 +42,6 @@
 }
 
 .submitBtn:hover{
-  background-color: #ff7730;
+  background-color: #55c57a;
   color: white; 
 }

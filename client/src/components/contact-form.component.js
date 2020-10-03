@@ -170,82 +170,33 @@ class ContactForm extends Component{
         return(
                 // <Col xs="12" sm="12" md="7" lg="5" xl="3">
                     <div>
-                         
                         <Form className="contactForm" onSubmit={this.onSubmit}> 
                             <div className="contactTitle"><FontAwesomeIcon icon={faEnvelopeOpenText} size="lg"></FontAwesomeIcon>  Contact Us</div>
                             <Form.Row>
                                 <Form.Group as={Col} controlId="formGridEmail">
                                 <label for="emailInput" className="contactLabel">Email</label>
-                                <input className="form__input" id="emailInput" type="email" placeholder="Enter email" value={this.state.email} onChange={this.onChangeEmail} />
+                                <input className="form__input" id="emailInput" type="email" placeholder="Enter email" value={this.state.email} onChange={this.onChangeEmail} required/>
                                 </Form.Group>
                             </Form.Row>
                             <Form.Row>
                                 <Form.Group as={Col} controlId="formGridFirst">
                                 <Form.Label className="contactLabel">First Name</Form.Label> 
-                                <Form.Control  className="form__input" type="text" placeholder="Enter first name" value={this.state.firstName} onChange={this.onChangeFirstname} />
+                                <Form.Control  className="form__input" type="text" placeholder="Enter first name" value={this.state.firstName} onChange={this.onChangeFirstname} required/>
                                 </Form.Group>
                                 <Form.Group as={Col} controlId="formGridLast">
                                 <Form.Label className="contactLabel">Last Name</Form.Label>
-                                <Form.Control  className="form__input" type="text" placeholder="Enter last name" value={this.state.lastName} onChange={this.onChangeLastname} />
-                                </Form.Group>
-                            </Form.Row>
-                            <Form.Row>
-                                <Form.Group as={Col} controlId="formGridBuySell">
-                                        <Form.Label className="contactLabel">I am looking to:</Form.Label>
-                                        <Form.Control as="select" value={this.state.buySell} onChange={this.onChangeBuySell}>
-                                            <option value="Buy">Buy</option>
-                                            <option value="Sell">Sell</option>
-                                        </Form.Control>
+                                <Form.Control  className="form__input" type="text" placeholder="Enter last name" value={this.state.lastName} onChange={this.onChangeLastname} required/>
                                 </Form.Group>
                             </Form.Row>
 
-                            { (this.state.buySell === 'Buy') 
-                            ? 
-                                (
-                                    <Form.Row>
-                                        <Form.Group as={Col} controlId="formGridBuyText">
-                                            <Form.Label className="contactLabel">Describe your dream home:</Form.Label>
-                                            <Form.Control as="textarea" className="formText" rows="3" value={this.state.buyDescription} onChange={this.onChangeBuyDescription} />
-                                        </Form.Group>
-                                    </Form.Row>
-                                ) 
-                            :
-                                (
-                                    <div>
-                                        <Form.Row>
-                                            <Form.Group as={Col} controlId="formGridPropertyType">
-                                                <Form.Label className="contactLabel">Property Type</Form.Label>
-                                                <Form.Control as="select" value={this.state.propertyType} onChange={this.onChangePropertyType}>
-                                                    <option>Residential</option>
-                                                    <option>Commercial</option>
-                                                </Form.Control>
-                                            </Form.Group>                                      
-                                        <Form.Row>
-                                            <Form.Group as={Col} controlId="formGridAddress1">
-                                                <Form.Label className="contactLabel">Address</Form.Label>
-                                                <Form.Control placeholder="1234 Main St" value={this.state.address} onChange={this.onChangeAddress}  />
-                                            </Form.Group>
-                                        </Form.Row>
-                                        <Form.Row>
-                                            <Form.Group as={Col} controlId="formGridCity">
-                                                <Form.Label className="contactLabel">City</Form.Label>
-                                                <Form.Control  value={this.state.city} onChange={this.onChangeCity} />
-                                            </Form.Group>
-                                            <Form.Group as={Col} controlId="formGridState">
-                                                <Form.Label className="contactLabel">State</Form.Label>
-                                                <Form.Control type="text" value={this.state.state} onChange={this.onChangeState} >
-                                                </Form.Control>
-                                            </Form.Group>
-                                            <Form.Group as={Col} controlId="formGridZip">
-                                                <Form.Label className="contactLabel">Zip</Form.Label>
-                                                <Form.Control type="number" value={this.state.zip} onChange={this.onChangeZip} />
-                                            </Form.Group>
-                                        </Form.Row>
-                                        </Form.Row>
-                                    </div>
-                                )
-                        }
-                                {this.state.submit === 'submit' ? <Button className="submitBtn" variant="dark" type="submit">  <FontAwesomeIcon icon={faPaperPlane} size="lg"></FontAwesomeIcon> Submit</Button> : <p>Sucessfully Submitted!</p>}
+                            <Form.Row>
+                                <Form.Group as={Col} controlId="formGridBuyText">
+                                    <Form.Label className="contactLabel">How can we help?</Form.Label>
+                                    <Form.Control as="textarea" className="form__input formText" rows="3" value={this.state.buyDescription} onChange={this.onChangeBuyDescription} required/>
+                                </Form.Group>
+                            </Form.Row>
+
+                            {this.state.submit === 'submit' ? <Button className="submitBtn" variant="dark" type="submit">  <FontAwesomeIcon icon={faPaperPlane} size="md"></FontAwesomeIcon> Submit</Button> : <p>Sucessfully Submitted!</p>}
                             </Form>
                     </div>
                 // </Col>
