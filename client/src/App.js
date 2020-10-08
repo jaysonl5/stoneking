@@ -22,7 +22,7 @@ export default function App() {
         <h1>Find the perfect place to call<br /> <span className="homespan">HOME</span></h1>
       </div>
 
-      <div><MainContent /></div>
+      <MainContent />
       
       <div className="spacer"></div>
       <Footer />
