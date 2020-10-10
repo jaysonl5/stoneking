@@ -174,7 +174,7 @@ class ContactForm extends Component{
                             <div className="contactTitle"><FontAwesomeIcon icon={faEnvelopeOpenText} size="lg"></FontAwesomeIcon>  Contact Us</div>
                             <Form.Row>
                                 <Form.Group as={Col} controlId="formGridEmail">
-                                <label for="emailInput" className="contactLabel">Email</label>
+                                <label htmlFor="emailInput" className="contactLabel">Email</label>
                                 <input className="form__input" id="emailInput" type="email" placeholder="Enter email" value={this.state.email} onChange={this.onChangeEmail} required/>
                                 </Form.Group>
                             </Form.Row>
@@ -196,7 +196,7 @@ class ContactForm extends Component{
                                 </Form.Group>
                             </Form.Row>
 
-                            {this.state.submit === 'submit' ? <Button className="submitBtn" variant="dark" type="submit">  <FontAwesomeIcon icon={faPaperPlane} size="md"></FontAwesomeIcon> Submit</Button> : <p>Sucessfully Submitted!</p>}
+                            {this.state.submit === 'submit' ? <Button className="submitBtn" variant="dark" type="submit">  <FontAwesomeIcon icon={faPaperPlane} size="1x"></FontAwesomeIcon> Submit</Button> : <p>Sucessfully Submitted!</p>}
                             </Form>
                     </div>
                 // </Col>

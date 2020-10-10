@@ -1,8 +1,7 @@
 import React from 'react';
-import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMobile } from '@fortawesome/free-solid-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 export default function Navigation(props){
       return(
@@ -30,7 +29,7 @@ export default function Navigation(props){
             </Nav> */}
   
           </Navbar>
-          <button className="callBtn">Call Now</button>
+          <button className="callBtn"> <FontAwesomeIcon icon={faPhone} size="lg"></FontAwesomeIcon>  Call Now</button>
         </div>
       );
 }
