@@ -19,8 +19,7 @@ export default function App() {
       </div>
 
       <MainContent />
-      
-      <div className="spacer"></div>
+
       <Footer />
     </div>
 
