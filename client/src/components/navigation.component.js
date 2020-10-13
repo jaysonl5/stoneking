@@ -29,7 +29,7 @@ export default function Navigation(props){
             </Nav> */}
   
           </Navbar>
-          <button type="button" className="callBtn" href="tel:+14056458700"> <FontAwesomeIcon icon={faPhone} size="lg"></FontAwesomeIcon>  Call Now</button>
+          <a className="button" href="tel:+14055201236"> <FontAwesomeIcon icon={faPhone} size="lg"></FontAwesomeIcon>  Call Now</a>
         </div>
       );
 }
