@@ -17,19 +17,13 @@ router.route('/send').post((req, res) => {
     var buyDescription = req.body.buyDescription
     var content = `
         Name: ${fullName} \n 
-        email: ${email} \n 
-        Looking to: ${buySell} \n
-        Property Type: ${propertyType} \n
-        Address: ${address} \n
-        City: ${city} \n
-        State: ${state} \n
-        Zip: ${zip} \n
+        email: ${email} \n
         Description: ${buyDescription} \n
         `
 
     var mail = {
         from: fullName,
-        to: 'jayson.lewis5@gmail.com',
+        to: 'jayson@boltmediaokc.com, sherrisellsokc@gmail.com, kevinsellsokc@gmail.com, sabrinasellsokc@gmail.com',
         subject: 'Stoneking Contact Request!',
         text: content
     }
